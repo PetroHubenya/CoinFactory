@@ -29,10 +29,10 @@ namespace CoinFactory.Controllers
         {
             // Receive data in json format.
             var data = await _coinGeckoApi.GetAsync($"https://api.coingecko.com/api/v3/coins/{id}");
-            // Convert received data from json format to Coin class instance.
-            Coin coin = JsonConvert.DeserializeObject<Coin>(data.ToString());
+            //var content = await data.Content.ReadAsStringAsync();
 
-            return View(coin);
+            var coins = JsonConvert.DeserializeObject<Coin>(data);
+            return View(coins);
         }
     }
 }
