@@ -1,6 +1,6 @@
 ﻿namespace CoinFactory.Models
 {
-	public class Currency
+	public class Coin
 	{
 		/* Below properties correspond to "/search/trending".
 		 * Get trending search coins (Top-7) on CoinGecko in the last 24 hours.*/
@@ -29,7 +29,7 @@
 
 		// Constructor.
 
-		public Currency(string id,
+		public Coin(string id,
 						int coinId,
 						string name,
 						string symbol,
