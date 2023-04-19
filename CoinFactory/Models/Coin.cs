@@ -30,16 +30,16 @@
 		// Constructor.
 
 		public Coin(string id,
-						int coinId,
-						string name,
-						string symbol,
-						int marketCapRank,
-						string thumb,
-						string small,
-						string large,
-						string slug,
-						double priceBtc,
-						int score)
+					int coinId,
+					string name,
+					string symbol,
+					int marketCapRank,
+					string thumb,
+					string small,
+					string large,
+					string slug,
+					double priceBtc,
+					int score)
 		{
 			Id = id;
 			CoinId = coinId;
